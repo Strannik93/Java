@@ -25,20 +25,11 @@ public class SumPrimeNumbers {
 
     public static boolean checkSimplNum(int num) {
         if (num > 1){
-            if (num > 7){
-                for (int i = 2; i <= 7; i++) {
-                    if (num%i == 0) {
-                        return false;
-                    }
-                }
-            }
-            else {
                 for (int i = 2; i < num; i++) {
                     if (num%i == 0) {
                         return false;
                     }
                 }
-            }
             return true;
         }
         else{
